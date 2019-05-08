@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <header>
-      <span>Vuerger Queen</span>
-    </header>
     <main>
       <img src="./assets/burgerQueenLogo.png" alt="Vue.js PWA">
       <router-view></router-view>
