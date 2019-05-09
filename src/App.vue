@@ -2,7 +2,10 @@
   <div id="app">
     <main>
       <img src="./assets/burgerQueenLogo.png" alt="Vue.js PWA">
+       <br>
       <router-view></router-view>
+      <button v-on:click="counter += 1">Add 1</button>
+      <p>The button above has been clicked {{ counter }} times.</p>
     </main>
   </div>
 </template>
@@ -10,6 +13,11 @@
 <script>
 export default {
   name: 'app',
+  data() {
+    return {
+      counter: 0,
+    };
+  },
 };
 </script>
 

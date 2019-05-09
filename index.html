@@ -55,7 +55,8 @@
       messagingSenderId: "379310096711",
     };
     firebase.initializeApp(config);
-
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true });
   </script>
 </body>
 
